@@ -13,7 +13,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
 
     // TODO: Send Email
 
-    header("Location: contact.php?status=thanks");
+    header("Location: contact.php?status=done");
     exit;
     }
 ?>
@@ -27,7 +27,7 @@ include('includes/header.php');
     <div class="section page">
         <div class="wrapper">
             <h1>Contact</h1>
-            <?php if(isset($_GET["status"]) AND ($_GET["status"] == "thanks")){ ?>
+            <?php if(isset($_GET["status"]) AND ($_GET["status"] == "done")){ ?>
                 <p>Thanks for the email! I&rsquo;ll be in touch shortly.</p>
             <?php }else{ ?>
             <p>I&rsquo;d love to hear from you! Complete the form to send me an email.</p>
